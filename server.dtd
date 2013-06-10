@@ -1,0 +1,23 @@
+<!ELEMENT server (data,items?)>
+<!ATTLIST server version CDATA #REQUIRED>
+<!ELEMENT data (connection,response?)>
+<!ELEMENT connection (#PCDATA)>
+<!ELEMENT response (state,subject,pid?)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT items (pond|monitor)+>
+<!ELEMENT pond (pid,pname,parea,psettl,fishspot,fishcost,fishes,other,uname,utel)>
+<!ELEMENT pid (#PCDATA)>
+<!ELEMENT pname (#PCDATA)>
+<!ELEMENT parea (#PCDATA)>
+<!ELEMENT psettl (#PCDATA)>
+<!ELEMENT fishspot (#PCDATA)>
+<!ELEMENT fishcost (#PCDATA)>
+<!ELEMENT fishes (#PCDATA)>
+<!ELEMENT other (#PCDATA)>
+<!ELEMENT uname (#PCDATA)>
+<!ELEMENT utel (#PCDATA)>
+<!ELEMENT monitor (pid,mdate,mtemp,mlevel)>
+<!ELEMENT mdate (#PCDATA)>
+<!ELEMENT mtemp (#PCDATA)>
+<!ELEMENT mlevel (#PCDATA)>

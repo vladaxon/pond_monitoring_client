@@ -1,0 +1,4 @@
+#Client properties
+#Sun Jun 02 17:41:35 EEST 2013
+serverport=2812
+serverurl=127.0.0.1
